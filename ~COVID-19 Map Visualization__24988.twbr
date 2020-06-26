@@ -1,0 +1,1619 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0415.1946                               -->
+<workbook source-build='2020.2.0 (20202.20.0415.1946)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <_.fcp.DashboardExportButton.true...DashboardExportButton />
+    <ISO8601PeriodTypes />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='us-counties' inline='true' name='federated.1nxqlja14rx9gl122j6q006imm1g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='us-counties' name='textscan.00eu1tv1vqxr3515q33hr1yla1p9'>
+            <connection class='textscan' directory='C:/Users/daniel.carpenter/Documents/GitHub/covid-19-data' filename='us-counties.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.00eu1tv1vqxr3515q33hr1yla1p9' name='us-counties.csv' table='[us-counties#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='county' ordinal='1' />
+            <column datatype='string' name='state' ordinal='2' />
+            <column datatype='integer' name='fips' ordinal='3' />
+            <column datatype='integer' name='cases' ordinal='4' />
+            <column datatype='integer' name='deaths' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.00eu1tv1vqxr3515q33hr1yla1p9' name='us-counties.csv' table='[us-counties#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='county' ordinal='1' />
+            <column datatype='string' name='state' ordinal='2' />
+            <column datatype='integer' name='fips' ordinal='3' />
+            <column datatype='integer' name='cases' ordinal='4' />
+            <column datatype='integer' name='deaths' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[us-counties.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[us-counties.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us-counties.csv_00B986489EAA4AD6A38CC5C5C7F917D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[us-counties.csv]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us-counties.csv_00B986489EAA4AD6A38CC5C5C7F917D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[us-counties.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us-counties.csv_00B986489EAA4AD6A38CC5C5C7F917D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fips]</local-name>
+            <parent-name>[us-counties.csv]</parent-name>
+            <remote-alias>fips</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us-counties.csv_00B986489EAA4AD6A38CC5C5C7F917D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cases]</local-name>
+            <parent-name>[us-counties.csv]</parent-name>
+            <remote-alias>cases</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us-counties.csv_00B986489EAA4AD6A38CC5C5C7F917D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deaths]</local-name>
+            <parent-name>[us-counties.csv]</parent-name>
+            <remote-alias>deaths</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[us-counties.csv_00B986489EAA4AD6A38CC5C5C7F917D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cases DoD' datatype='integer' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM([cases])) - LOOKUP(ZN(SUM([cases])), -1)'>
+          <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[tdy:date:qk]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <column caption='Deaths DoD' datatype='integer' name='[Calculation2]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM([deaths])) - LOOKUP(ZN(SUM([deaths])), -1)'>
+          <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[tdy:date:qk]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <column caption='Cases WoW' datatype='integer' name='[Calculation3]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM([cases])) - LOOKUP(ZN(SUM([cases])), -1)'>
+          <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <column caption='Deaths WoW' datatype='integer' name='[Calculation4]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM([deaths])) - LOOKUP(ZN(SUM([deaths])), -1)'>
+          <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='us-counties.csv' datatype='table' hidden='true' name='[__tableau_internal_object_id__].[us-counties.csv_00B986489EAA4AD6A38CC5C5C7F917D9]' role='measure' type='quantitative' />
+      <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+      <column caption='Fips' datatype='integer' hidden='true' name='[fips]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[cases]' derivation='Max' name='[max:cases:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date]' derivation='MDY' name='[md:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+      <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date]' derivation='Week-Trunc' name='[twk:date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date]' derivation='Week' name='[wk:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (County)' hidden='true' name='[Action (County)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[county]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (County,WEEK(Date),State)' hidden='true' name='[Action (County,WEEK(Date),State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[county]' />
+          <groupfilter function='level-members' level='[wk:date:ok]' />
+          <groupfilter function='level-members' level='[state]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (State)' hidden='true' name='[Action (State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[state]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (County,MDY(Date),State)' hidden='true' name='[Tooltip (County,MDY(Date),State)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[county]' />
+          <groupfilter function='level-members' level='[md:date:ok]' />
+          <groupfilter function='level-members' level='[state]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (County,State)' hidden='true' name='[Tooltip (County,State)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[county]' />
+          <groupfilter function='level-members' level='[state]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (County,WEEK(Date),State)' hidden='true' name='[Tooltip (County,WEEK(Date),State)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[county]' />
+          <groupfilter function='level-members' level='[wk:date:ok]' />
+          <groupfilter function='level-members' level='[state]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (County,YEAR(Date),State)' hidden='true' name='[Tooltip (County,YEAR(Date),State)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[county]' />
+          <groupfilter function='level-members' level='[yr:date:ok]' />
+          <groupfilter function='level-members' level='[state]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (State)' hidden='true' name='[Tooltip (State)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[state]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='state, county'>
+          <field>[state]</field>
+          <field>[county]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:state:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ohio&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AdhocCluster:1:ok]' type='palette'>
+            <map to='#8dbfa8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#9e3a26'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#bc4623'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#cf4f22'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#de5d1f'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#eb6c1c'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f28026'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f49538'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#f7a84a'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f8bc5b'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{f04089f5-577f-4067-976d-3b6ecff627fd}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:cases:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>10</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='us-counties.csv' id='us-counties.csv_00B986489EAA4AD6A38CC5C5C7F917D9'>
+            <properties context=''>
+              <relation connection='textscan.00eu1tv1vqxr3515q33hr1yla1p9' name='us-counties.csv' table='[us-counties#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='county' ordinal='1' />
+                  <column datatype='string' name='state' ordinal='2' />
+                  <column datatype='integer' name='fips' ordinal='3' />
+                  <column datatype='integer' name='cases' ordinal='4' />
+                  <column datatype='integer' name='deaths' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='State Filter' name='[Action1]'>
+      <activation type='on-select' />
+      <source dashboard='Summary' type='sheet' />
+      <link caption='State Filter' delimiter=',' escape='\' expression='tsl:Summary?%5Bfederated.1nxqlja14rx9gl122j6q006imm1g%5D.%5Bstate%5D~s0=&lt;[state]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='target' value='Summary' />
+      </command>
+    </action>
+    <action caption='County Filter' name='[Action2]'>
+      <activation type='on-select' />
+      <source datasource='federated.1nxqlja14rx9gl122j6q006imm1g' type='datasource'>
+        <exclude-sheet name='St. - Daily' />
+        <exclude-sheet name='St. - Top' />
+      </source>
+      <link caption='County Filter' delimiter=',' escape='\' expression='tsl:Summary?%5Bfederated.1nxqlja14rx9gl122j6q006imm1g%5D.%5Bcounty%5D~s0=&lt;[county]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Map,St. - Daily,St. - Top,St. - WoW' />
+        <param name='target' value='Summary' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='us-counties' name='federated.1nxqlja14rx9gl122j6q006imm1g' />
+    </datasources>
+    <datasource-dependencies datasource='federated.1nxqlja14rx9gl122j6q006imm1g'>
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Co - Daily'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Totals in &lt;</run>
+            <run>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]</run>
+            <run>&gt; County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us-counties' name='federated.1nxqlja14rx9gl122j6q006imm1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nxqlja14rx9gl122j6q006imm1g'>
+            <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[cases]' derivation='Sum' name='[sum:cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[deaths]' derivation='Sum' name='[sum:deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (County)]'>
+            <groupfilter function='member' level='[county]' member='&quot;Summit&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Ohio&quot;' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:date:ok]'>
+            <groupfilter from='#2020-01-26#' function='range' level='[none:date:ok]' to='#2020-06-25#' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:date:ok]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (County)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:deaths:qk]' scope='rows' value='Deaths' />
+            <format attr='title' class='0' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[tdy:date:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' palette='red_gold_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:deaths:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:deaths:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk] + [federated.1nxqlja14rx9gl122j6q006imm1g].[sum:deaths:qk])</rows>
+        <cols>[federated.1nxqlja14rx9gl122j6q006imm1g].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{F4BB81A3-5BE2-409D-A45A-73827E43CAF8}' />
+    </worksheet>
+    <worksheet name='Co - WoW'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Weekly ROC in &lt;</run>
+            <run>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]</run>
+            <run>&gt; County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us-counties' name='federated.1nxqlja14rx9gl122j6q006imm1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nxqlja14rx9gl122j6q006imm1g'>
+            <column caption='Cases WoW' datatype='integer' name='[Calculation3]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM([cases])) - LOOKUP(ZN(SUM([cases])), -1)'>
+                <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+              </calculation>
+            </column>
+            <column caption='Deaths WoW' datatype='integer' name='[Calculation4]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM([deaths])) - LOOKUP(ZN(SUM([deaths])), -1)'>
+                <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+              </calculation>
+            </column>
+            <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[date]' derivation='Week-Trunc' name='[twk:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation3]' derivation='User' name='[usr:Calculation3:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Calculation4]' derivation='User' name='[usr:Calculation4:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (County)]'>
+            <groupfilter function='member' level='[county]' member='&quot;Summit&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Ohio&quot;' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:date:ok]'>
+            <groupfilter from='#2020-01-26#' function='range' level='[none:date:ok]' to='#2020-06-25#' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' filter-group='5' included-values='in-range'>
+            <min>#2020-01-19 00:00:00#</min>
+            <max>#2020-06-19 23:59:59#</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:date:ok]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (County)]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' palette='red_black_10_0' reverse='true' type='interpolated' />
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk]' palette='red_black_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk] + [federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk])</rows>
+        <cols>[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]</cols>
+      </table>
+      <simple-id uuid='{8D1AEE08-00AB-4067-8229-8E1AF405D90C}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us-counties' name='federated.1nxqlja14rx9gl122j6q006imm1g' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1nxqlja14rx9gl122j6q006imm1g'>
+            <column auto-hidden='true' caption='Clusters' datatype='integer' hidden='true' is-adhoc-cluster='true' name='[AdhocCluster:1]' parent-model='[AnalyticModel:{f04089f5-577f-4067-976d-3b6ecff627fd}]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-1' value='Cluster Outliers' />
+                <alias key='0' value='Not Clustered' />
+                <alias key='1' value='Cluster 1' />
+                <alias key='2' value='Cluster 2' />
+                <alias key='3' value='Cluster 3' />
+                <alias key='4' value='Cluster 4' />
+                <alias key='5' value='Cluster 5' />
+                <alias key='6' value='Cluster 6' />
+                <alias key='7' value='Cluster 7' />
+                <alias key='8' value='Cluster 8' />
+                <alias key='9' value='Cluster 9' />
+                <alias key='10' value='Cluster 10' />
+                <alias key='11' value='Cluster 11' />
+                <alias key='12' value='Cluster 12' />
+                <alias key='13' value='Cluster 13' />
+                <alias key='14' value='Cluster 14' />
+                <alias key='15' value='Cluster 15' />
+                <alias key='16' value='Cluster 16' />
+                <alias key='17' value='Cluster 17' />
+                <alias key='18' value='Cluster 18' />
+                <alias key='19' value='Cluster 19' />
+                <alias key='20' value='Cluster 20' />
+                <alias key='21' value='Cluster 21' />
+                <alias key='22' value='Cluster 22' />
+                <alias key='23' value='Cluster 23' />
+                <alias key='24' value='Cluster 24' />
+                <alias key='25' value='Cluster 25' />
+                <alias key='26' value='Cluster 26' />
+                <alias key='27' value='Cluster 27' />
+                <alias key='28' value='Cluster 28' />
+                <alias key='29' value='Cluster 29' />
+                <alias key='30' value='Cluster 30' />
+                <alias key='31' value='Cluster 31' />
+                <alias key='32' value='Cluster 32' />
+                <alias key='33' value='Cluster 33' />
+                <alias key='34' value='Cluster 34' />
+                <alias key='35' value='Cluster 35' />
+                <alias key='36' value='Cluster 36' />
+                <alias key='37' value='Cluster 37' />
+                <alias key='38' value='Cluster 38' />
+                <alias key='39' value='Cluster 39' />
+                <alias key='40' value='Cluster 40' />
+                <alias key='41' value='Cluster 41' />
+                <alias key='42' value='Cluster 42' />
+                <alias key='43' value='Cluster 43' />
+                <alias key='44' value='Cluster 44' />
+                <alias key='45' value='Cluster 45' />
+                <alias key='46' value='Cluster 46' />
+                <alias key='47' value='Cluster 47' />
+                <alias key='48' value='Cluster 48' />
+                <alias key='49' value='Cluster 49' />
+                <alias key='50' value='Cluster 50' />
+              </aliases>
+            </column>
+            <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+            <column-instance column='[cases]' derivation='Max' name='[max:cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[deaths]' derivation='Max' name='[max:deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AdhocCluster:1]' derivation='None' is-adhoc-cluster='true' name='[none:AdhocCluster:1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[date]' derivation='Week' name='[wk:date:ok]' pivot='key' type='ordinal' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='color' field='[none:AdhocCluster:1:ok]' type='palette'>
+                  <map to='#8dbfa8'>
+                    <bucket>1</bucket>
+                  </map>
+                  <map to='#9e3a26'>
+                    <bucket>10</bucket>
+                  </map>
+                  <map to='#bc4623'>
+                    <bucket>9</bucket>
+                  </map>
+                  <map to='#cf4f22'>
+                    <bucket>8</bucket>
+                  </map>
+                  <map to='#de5d1f'>
+                    <bucket>7</bucket>
+                  </map>
+                  <map to='#eb6c1c'>
+                    <bucket>6</bucket>
+                  </map>
+                  <map to='#f28026'>
+                    <bucket>5</bucket>
+                  </map>
+                  <map to='#f49538'>
+                    <bucket>4</bucket>
+                  </map>
+                  <map to='#f7a84a'>
+                    <bucket>3</bucket>
+                  </map>
+                  <map to='#f8bc5b'>
+                    <bucket>2</bucket>
+                  </map>
+                </encoding>
+              </style-rule>
+            </style>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Ohio&quot;' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[Longitude (generated)]' field-type='quantitative' max='-8780320.4403201584' min='-9939745.7828241531' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[Latitude (generated)]' field-type='quantitative' max='5129271.2664775206' min='4687372.8744912557' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:cases:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:cases:qk]' num-steps='5' palette='tableau-map-temperatur' type='interpolated' />
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:deaths:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:cases:qk]' value='Number of Cases'>
+              <formatted-text>
+                <run>Number of Cases</run>
+              </formatted-text>
+            </format>
+            <format attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:AdhocCluster:1:ok]' value='Number of Cases'>
+              <formatted-text>
+                <run>Number of Cases</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.41999998688697815' />
+            <format attr='map-style' value='outdoors' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='page-card-title'>
+            <format attr='title' value='Select Week'>
+              <formatted-text>
+                <run>Select Week</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' />
+              <size column='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:cases:qk]' />
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:AdhocCluster:1:ok]' />
+              <tooltip column='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:deaths:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>State:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>County:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989'>Current Cases: </run>
+                <run bold='true'><![CDATA[<[federated.1nxqlja14rx9gl122j6q006imm1g].[max:cases:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989'>Current Deaths: &#9;</run>
+                <run bold='true'><![CDATA[<[federated.1nxqlja14rx9gl122j6q006imm1g].[max:deaths:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='5.0694117546081543' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nxqlja14rx9gl122j6q006imm1g].[Latitude (generated)]</rows>
+        <cols>[federated.1nxqlja14rx9gl122j6q006imm1g].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[wk:date:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{04624B7E-1C94-4106-8142-C6EDABA8F017}' />
+    </worksheet>
+    <worksheet name='St. - Daily'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Totals in &lt;</run>
+            <run>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us-counties' name='federated.1nxqlja14rx9gl122j6q006imm1g' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1nxqlja14rx9gl122j6q006imm1g'>
+            <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[cases]' derivation='Sum' name='[sum:cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[deaths]' derivation='Sum' name='[sum:deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Ohio&quot;' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[tdy:date:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' palette='orange_gold_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:deaths:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk] + [federated.1nxqlja14rx9gl122j6q006imm1g].[sum:deaths:qk])</rows>
+        <cols>[federated.1nxqlja14rx9gl122j6q006imm1g].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{303ED54D-62A7-40BB-A24F-6DFE0BF33AD4}' />
+    </worksheet>
+    <worksheet name='St. - Top'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top Counties in &lt;</run>
+            <run>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us-counties' name='federated.1nxqlja14rx9gl122j6q006imm1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nxqlja14rx9gl122j6q006imm1g'>
+            <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[cases]' derivation='Sum' name='[sum:cases:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Ohio&quot;' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='relative-date' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:date:qk]' first-period='-1' include-future='true' include-null='false' last-period='-1' period-type-v2='day' />
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:date:qk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk] / [federated.1nxqlja14rx9gl122j6q006imm1g].[none:county:nk])</rows>
+        <cols>[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]</cols>
+      </table>
+      <simple-id uuid='{A9691F19-1A20-4BEA-915B-A6A8668E6EB6}' />
+    </worksheet>
+    <worksheet name='St. - WoW'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Weekly ROC in &lt;</run>
+            <run>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us-counties' name='federated.1nxqlja14rx9gl122j6q006imm1g' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1nxqlja14rx9gl122j6q006imm1g'>
+            <column caption='Cases WoW' datatype='integer' name='[Calculation3]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM([cases])) - LOOKUP(ZN(SUM([cases])), -1)'>
+                <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+              </calculation>
+            </column>
+            <column caption='Deaths WoW' datatype='integer' name='[Calculation4]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM([deaths])) - LOOKUP(ZN(SUM([deaths])), -1)'>
+                <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+              </calculation>
+            </column>
+            <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[date]' derivation='Week-Trunc' name='[twk:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation3]' derivation='User' name='[usr:Calculation3:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Calculation4]' derivation='User' name='[usr:Calculation4:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Ohio&quot;' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' filter-group='5' included-values='in-range'>
+            <min>#2020-01-19 00:00:00#</min>
+            <max>#2020-06-19 23:59:59#</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[Action (State)]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[:Measure Names]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]</column>
+            <column>[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' value='64' />
+            <format attr='width' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk]' value='64' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' reverse='true' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ae123a</color>
+                <color>#bf193b</color>
+                <color>#cf253d</color>
+                <color>#dc3340</color>
+                <color>#e74445</color>
+                <color>#ef574c</color>
+                <color>#f46a57</color>
+                <color>#f77b66</color>
+                <color>#fb8d75</color>
+                <color>#fc9d89</color>
+                <color>#feac9d</color>
+                <color>#d9d9d9</color>
+                <color>#ccced0</color>
+                <color>#c0c3c8</color>
+                <color>#b4b9bf</color>
+                <color>#a8afb7</color>
+                <color>#9da4af</color>
+                <color>#929ba6</color>
+                <color>#87919e</color>
+                <color>#7d8896</color>
+                <color>#737e8d</color>
+                <color>#6a7585</color>
+                <color>#616d7d</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='size-bar' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk]' palette='red_black_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' value='WoW Graph Only'>
+              <formatted-text>
+                <run>WoW Graph Only</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' />
+            </encodings>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' />
+            </encodings>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk]' />
+              <lod column='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:state:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk] + [federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk])</rows>
+        <cols>[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]</cols>
+      </table>
+      <simple-id uuid='{57A18EF7-A055-4634-80ED-E68E3E5A5D1E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Summary'>
+      <style />
+      <size maxheight='927' maxwidth='1569' minheight='927' minwidth='1569' preset-index='17' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='us-counties' name='federated.1nxqlja14rx9gl122j6q006imm1g' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1nxqlja14rx9gl122j6q006imm1g'>
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+        <column-instance column='[date]' derivation='Week-Trunc' name='[twk:date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='91370' id='7' param='horz' w='98980' x='510' y='863'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='91370' id='5' w='91268' x='510' y='863'>
+              <zone h='45307' id='3' name='Map' w='66794' x='24984' y='46926'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39159' id='14' name='Co - Daily' w='20969' x='47801' y='863'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39159' id='16' name='St. - Daily' w='22626' x='510' y='863'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='3452' id='22' w='91268' x='510' y='40022'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45307' id='23' name='St. - Top' w='22435' x='510' y='46926'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='currpage' _.fcp.SetMembershipControl.true...type-v2='currpage' h='3452' id='31' name='Map' synchronized='1' w='52454' x='510' y='43474'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='3452' id='32' w='38814' x='52964' y='43474'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39159' id='38' name='St. - WoW' w='22626' x='23136' y='863'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39159' id='40' name='Co - WoW' w='23008' x='68770' y='863'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='39159' id='42' w='2039' x='45762' y='863'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='45307' id='43' w='2039' x='22945' y='46926'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' fixed-size='121' h='91370' id='20' is-fixed='true' w='7712' x='91778' y='863'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='45636' id='6' param='vert' w='7712' x='91778' y='863'>
+                <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='38193' id='19' w='7712' x='91778' y='863'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='7443' id='44' name='St. - WoW' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[twk:date:qk]' values='database' w='7712' x='91778' y='39056'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='45734' id='21' param='vert' w='7712' x='91778' y='46499'>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='224' h='25027' id='8' is-fixed='true' name='Map' pane-specification-id='0' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:AdhocCluster:1:ok]' w='7712' x='91778' y='46499'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' fixed-size='139' h='15858' id='9' is-fixed='true' name='Map' pane-specification-id='0' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:cases:qk]' w='7712' x='91778' y='71526'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='4849' id='34' w='7712' x='91778' y='87384'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone _.fcp.SetMembershipControl.false...type='dashboard-object' _.fcp.SetMembershipControl.true...type-v2='dashboard-object' fixed-size='117' h='3452' id='33' is-fixed='true' w='98980' x='510' y='95685'>
+            <button action='' button-click-action-metadata='pdf' button-type='text'>
+              <export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;pdf&quot; dashboarddoc-id=&quot;{9936D761-2EB1-4213-9FE8-9C9B18FC23C3}&quot;</export-button-action>
+              <button-visual-state>
+                <format attr='background-color' value='#e6e6e6' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='2' />
+                <format attr='border-color' value='#b4b4b4' />
+              </button-visual-state>
+            </button>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='3452' id='35' w='98980' x='510' y='92233'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='37' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98274' id='36' param='vert' w='98980' x='510' y='863'>
+                <zone fixed-size='280' h='32799' id='16' is-fixed='true' name='St. - Daily' w='34863' x='510' y='863'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='32799' id='14' is-fixed='true' name='Co - Daily' w='35309' x='35373' y='863'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='32799' id='23' is-fixed='true' name='St. - Top' w='21096' x='70682' y='863'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49947' id='3' is-fixed='true' name='Map' w='91268' x='510' y='42286'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='224' h='25027' id='8' name='Map' pane-specification-id='0' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:AdhocCluster:1:ok]' w='7712' x='91778' y='46499'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' fixed-size='139' h='15858' id='9' name='Map' pane-specification-id='0' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:cases:qk]' w='7712' x='91778' y='71526'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='dashboard-object' _.fcp.SetMembershipControl.true...type-v2='dashboard-object' fixed-size='117' h='3452' id='33' w='98980' x='510' y='95685'>
+                  <button action='' button-click-action-metadata='pdf' button-type='text'>
+                    <export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;pdf&quot; dashboarddoc-id=&quot;{9936D761-2EB1-4213-9FE8-9C9B18FC23C3}&quot;</export-button-action>
+                    <button-visual-state>
+                      <format attr='background-color' value='#e6e6e6' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='2' />
+                      <format attr='border-color' value='#b4b4b4' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='currpage' _.fcp.SetMembershipControl.true...type-v2='currpage' h='5415' id='31' name='Map' synchronized='1' w='52454' x='510' y='36871'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9936D761-2EB1-4213-9FE8-9C9B18FC23C3}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='30'>
+    <window class='dashboard' maximized='true' name='Summary' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='Co - Daily'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Co - WoW'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Map'>
+          <current-page>
+            <multibucket>
+              <bucket>26</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='St. - Daily'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='St. - Top' />
+        <viewpoint name='St. - WoW'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7856472E-0FCB-4CEE-BF26-1684259341E0}' />
+    </window>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[none:AdhocCluster:1:ok]' type='color' />
+            <card pane-specification-id='0' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[max:cases:qk]' type='size' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>25</bucket>
+          </multibucket>
+        </current-page>
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{201F5290-3A27-453A-8C90-9555E5A3A5B3}' />
+    </window>
+    <window class='worksheet' name='St. - Top'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0CCF3A7A-C592-41F2-8EF9-850E244CE458}' />
+    </window>
+    <window class='worksheet' name='St. - Daily'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4539D664-5007-4CB2-B2D3-25B64B14DA49}' />
+    </window>
+    <window class='worksheet' name='St. - WoW'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='8' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' type='color' />
+            <card pane-specification-id='9' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA55AD6D-8407-4A64-8163-8EE2A6B47136}' />
+    </window>
+    <window class='worksheet' name='Co - Daily'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[sum:cases:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{77EC539E-368E-4076-8CAC-EEA7BAFF46E8}' />
+    </window>
+    <window class='worksheet' name='Co - WoW'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation3:qk]' type='color' />
+            <card pane-specification-id='5' param='[federated.1nxqlja14rx9gl122j6q006imm1g].[usr:Calculation4:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{14769654-EEEB-44F6-B4C3-E70AAE02700B}' />
+    </window>
+  </windows>
+</workbook>
